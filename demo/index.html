@@ -11,7 +11,9 @@
     <div id="aaa" style="position:absolute"><font size="+6">AAA</font></div>
 	<script src="../js/gyro.js"></script>
 	<script>
-		document.getElementById('aaa').style.left = screen.width / 2+ "px";
+		var a = document.getElementById('aaa');
+		a.style.left = screen.width / 2+ "px";
+		a.style.top = screen.height / 2+ "px";
 		gyro.startTracking(function(o) {
 			var b = document.getElementById('example'),
 					f = document.getElementById('features');
